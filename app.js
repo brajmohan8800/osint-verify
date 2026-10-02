@@ -13,7 +13,7 @@ if (tg) {
 // ═══════════════════════════════════════════════════════════
 // CONFIG — YAHAN APNA BOT WEBHOOK URL DAALO
 // ═══════════════════════════════════════════════════════════
-const API_ENDPOINT = 'https://unstirrable-hyperphysical-whitney.ngrok-free.dev/api/verify';
+const API_ENDPOINT = 'https://osintrixx.duckdns.org/api/verify';
 
 // ═══════════════════════════════════════════════════════════
 // FINGERPRINT COLLECTION
