@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>OSINTrix Verify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">🔍</div>
+            <h1>OSINTrix</h1>
+            <p class="subtitle">Verification</p>
+        </div>
+
+        <!-- Main card -->
+        <div class="card" id="mainCard">
+            <h2>Verify Yourself</h2>
+            <p class="description">
+                Bot use karne ke liye apna device verify karo.
+                Yeh ek baar karna hai.
+            </p>
+
+            <div class="info-box">
+                <div class="info-item">
+                    <span class="info-icon">🔒</span>
+                    <span>Your data is safe & encrypted</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">⚡</span>
+                    <span>Takes less than 3 seconds</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">✅</span>
+                    <span>One-time verification</span>
+                </div>
+            </div>
+
+            <button id="verifyBtn" class="btn-primary">
+                🚀 Verify Now
+            </button>
+        </div>
+
+        <!-- Loading card -->
+        <div class="card hidden" id="loadingCard">
+            <div class="spinner"></div>
+            <h2>Verifying...</h2>
+            <p class="description">Please wait, checking your device...</p>
+        </div>
+
+        <!-- Success card -->
+        <div class="card hidden" id="successCard">
+            <div class="success-icon">✅</div>
+            <h2>Verified!</h2>
+            <p class="description">
+                Aap successfully verify ho gaye ho.<br>
+                Ab bot pe wapas jao aur services use karo.
+            </p>
+            <button id="closeBtn" class="btn-primary">
+                ← Back to Bot
+            </button>
+        </div>
+
+        <!-- Error card -->
+        <div class="card hidden" id="errorCard">
+            <div class="error-icon">❌</div>
+            <h2>Verification Failed</h2>
+            <p class="description" id="errorMsg">Something went wrong.</p>
+            <button id="retryBtn" class="btn-secondary">
+                🔄 Retry
+            </button>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>© OSINTrix 2026</p>
+        </div>
+    </div>
+
+    <!-- Telegram WebApp SDK -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
